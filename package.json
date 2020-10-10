@@ -1,11 +1,12 @@
 {
-  "name": "amg_page",
-  "version": "1.0.0",
-  "description": "",
+  "name": "amg",
+  "version": "0.0.1",
+  "description": "Page for a beer distribuitor",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "concurrently \"pug -P ./src/pug/index.pug -o ./public/ \" \"sass ./src/sass:./public/css/\"",
+    "dev": "concurrently \"pug -w -P ./src/pug/index.pug -o ./public/ \" \"sass --watch ./src/sass:./public/css/\""
   },
-  "author": "",
+  "author": "Ludemys",
   "license": "ISC"
 }
