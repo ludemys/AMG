@@ -1,8 +1,9 @@
 .container {
+  position: relative;
   display: grid;
   width: 100%;
 
-  grid-template-rows: .3fr 5fr .5fr;
+  grid-template-rows: 3.5em 5fr minmax(7em, auto);
 
   grid-template-areas: 'header'
     'main'

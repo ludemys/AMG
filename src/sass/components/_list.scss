@@ -13,31 +13,8 @@
     margin-bottom: 0;
     margin-left: 2em;
 
-
-
-    border: 1px solid #eee;
-    border-bottom: none;
-
-    border-top-left-radius: 1.5em;
-    border-top-right-radius: 1.5em;
-
     &:nth-child(1) {
       margin-left: 0;
-    }
-
-    &:hover {
-      line-height: 3em;
-
-      .link {
-        padding-top: 1em;
-        padding-bottom: 1em;
-      }
-    }
-
-    .link {
-      padding-left: 1em;
-      padding-right: 1em;
-      line-height: 1.5em;
     }
   }
 }

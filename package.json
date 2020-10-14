@@ -4,8 +4,8 @@
   "description": "Page for a beer distribuitor",
   "main": "index.js",
   "scripts": {
-    "build": "concurrently \"pug -P ./src/pug/index.pug -o ./public/ \" \"sass ./src/sass:./public/css/\" \"npx babel ./src/js/ --out-file ./public/js/index.js \"",
-    "dev": "concurrently \"pug -w -P ./src/pug/index.pug -o ./public/ \" \"sass --watch ./src/sass:./public/css/\" \"npx babel ./src/js/ --watch --out-file ./public/js/index.js \""
+    "build": "concurrently \"pug -P ./src/pug/index.pug -o ./public/ \" \"sass ./src/sass:./public/css/\" \"npx babel ./src/js/ --out-dir ./public/js/ \"",
+    "dev": "concurrently \"pug -w -P ./src/pug/index.pug -o ./public/ \" \"sass --watch ./src/sass:./public/css/\" \"npx babel ./src/js/ --watch --out-dir ./public/js \""
   },
   "author": "Ludemys",
   "license": "ISC",

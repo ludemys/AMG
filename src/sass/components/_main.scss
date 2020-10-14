@@ -1,6 +1,6 @@
 .main {
   grid-area: main;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #eee;
 
   display: flex;
   flex-direction: column;
@@ -45,5 +45,7 @@
 }
 
 .logo-description {
-  font-size: 2em;
+  margin-top: 1em;
+  font-size: 1.5em;
+  text-align: center;
 }

@@ -1,3 +1,29 @@
 .nav {
   font-size: 0.85em;
+
+  .item {
+    border: 1px solid #eee;
+    border-bottom: none;
+
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+
+    &:hover {
+      padding-top: .7em;
+      padding-bottom: .7em;
+
+      .link {
+        padding-top: .7em;
+        padding-bottom: .7em;
+      }
+    }
+
+    transition: .2s;
+
+    .link {
+      padding-left: 1em;
+      padding-right: 1em;
+      line-height: 1.5em;
+    }
+  }
 }
