@@ -1,0 +1,49 @@
+.main {
+  grid-area: main;
+  border-bottom: 1px solid #444;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 2em;
+
+  .main-logo {
+    width: 30em;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 10em;
+  }
+
+  .section {
+    width: 70%;
+    margin-bottom: 10em;
+    line-height: 1.3em;
+  }
+
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.info {
+  scroll-behavior: smooth;
+  margin-right: 10em;
+}
+
+.info-2 {
+  margin-left: 10em;
+}
+
+.logo-title {
+  font-size: 3em;
+
+  animation: fadeInDown;
+  // animation-duration: .2s;
+}
+
+.logo-description {
+  font-size: 2em;
+}

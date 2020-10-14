@@ -4,9 +4,19 @@
   "description": "Page for a beer distribuitor",
   "main": "index.js",
   "scripts": {
-    "build": "concurrently \"pug -P ./src/pug/index.pug -o ./public/ \" \"sass ./src/sass:./public/css/\"",
-    "dev": "concurrently \"pug -w -P ./src/pug/index.pug -o ./public/ \" \"sass --watch ./src/sass:./public/css/\""
+    "build": "concurrently \"pug -P ./src/pug/index.pug -o ./public/ \" \"sass ./src/sass:./public/css/\" \"npx babel ./src/js/ --out-file ./public/js/index.js \"",
+    "dev": "concurrently \"pug -w -P ./src/pug/index.pug -o ./public/ \" \"sass --watch ./src/sass:./public/css/\" \"npx babel ./src/js/ --watch --out-file ./public/js/index.js \""
   },
   "author": "Ludemys",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5"
+  }
 }
