@@ -42,7 +42,6 @@ body {
 
 .main {
   grid-area: main;
-  border-bottom: 1px solid #eee;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,16 +54,18 @@ body {
   margin-bottom: 10em;
 }
 .main .section {
-  width: 70%;
-  margin-bottom: 10em;
-  line-height: 1.3em;
+  margin-bottom: 10rem;
+  line-height: 1.3rem;
 }
 .main:nth-child(1) {
   margin-top: 0;
 }
 
 .info {
-  scroll-behavior: smooth;
+  width: 70%;
+}
+
+.info-1 {
   margin-right: 10em;
 }
 
@@ -120,11 +121,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  flex-wrap: wrap;
   height: 100%;
 }
 
 .inline-list {
   flex-direction: row;
+  flex-wrap: nowrap;
 }
 .inline-list .item {
   margin-top: 0;
@@ -147,14 +150,20 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 0.5em;
+  border-top: 1px solid #eee;
 }
 .footer .media {
-  width: max-content;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  padding: 1em 0;
+  flex-direction: row;
+  align-items: center;
   padding-left: 2em;
+}
+.footer .media .media-container-aux {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.6em;
 }
 .footer .media .link {
   margin-bottom: 1em;
@@ -170,28 +179,31 @@ body {
   transform: translateY(0.2em) scale(0.85);
 }
 .footer .media .social-media {
-  width: 4em;
-  height: 4em;
+  width: 3em;
+  height: 3em;
 }
 .footer .footer-nav {
   font-size: 1.2em;
+  max-width: 50%;
 }
 .footer .footer-nav .list {
   align-items: flex-start;
   list-style-type: disc;
+  flex-wrap: wrap;
 }
 .footer .footer-nav .list .markdown {
   cursor: default;
 }
 .footer .footer-nav .list .item {
   margin-bottom: 0.5em;
-  transition: 0.1s;
+  flex-shrink: 0;
 }
 .footer .footer-nav .list .item:hover {
-  transform: scale(1.1);
   text-shadow: 0 0 5px #777;
+  text-decoration: underline;
 }
 .footer .footer-nav .list .item:active {
+  text-decoration: underline;
   transform: scale(0.9);
 }
 .footer .footer-nav .marcas {
@@ -201,9 +213,56 @@ body {
 .footer .copyright {
   max-width: 10em;
   line-height: 1.5em;
+  text-align: right;
+  padding-right: 1em;
 }
 .footer .copyright .copyright-year {
   line-height: 3em;
+  text-decoration: underline;
+}
+
+.trademarks-main-section {
+  display: grid;
+  gap: 5em;
+  grid-template-columns: repeat(5, 10em);
+  justify-content: space-evenly;
+  padding: 3em;
+  min-width: 75%;
+  max-width: 80%;
+}
+.trademarks-main-section .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 10em;
+  min-height: 10em;
+  border: 1px solid #777;
+  border-radius: 10%;
+  padding-bottom: 1em;
+  transition: 0.2s;
+}
+.trademarks-main-section .product .image {
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+.trademarks-main-section .product .text-logo {
+  height: 2em;
+}
+.trademarks-main-section .product:nth-child(6) {
+  grid-column: 2;
+}
+.trademarks-main-section .product:hover {
+  background: rgba(238, 238, 238, 0.1);
+  transform: scale(1.05);
+}
+.trademarks-main-section .product:active {
+  transform: scale(1.02) translateY(0.5em);
+}
+
+.products-title {
+  font-size: 3em;
   text-decoration: underline;
 }
 

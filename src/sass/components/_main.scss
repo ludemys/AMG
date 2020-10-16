@@ -1,6 +1,5 @@
 .main {
   grid-area: main;
-  border-bottom: 1px solid #eee;
 
   display: flex;
   flex-direction: column;
@@ -17,9 +16,8 @@
   }
 
   .section {
-    width: 70%;
-    margin-bottom: 10em;
-    line-height: 1.3em;
+    margin-bottom: 10rem;
+    line-height: 1.3rem;
   }
 
 
@@ -29,7 +27,10 @@
 }
 
 .info {
-  scroll-behavior: smooth;
+  width: 70%;
+}
+
+.info-1 {
   margin-right: 10em;
 }
 
