@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title AMG
+
+    link(rel="stylesheet", href="./css/main.css")
+
+    //- AOS
+    link(rel="stylesheet", href="./css/aos.css")
+    script(src="./js/aos.js")
+
+    //- ANIMATECSS
+    link(rel="stylesheet", href="./css/animate.css")
+  body.body-product
+    .container
+      header.header
+        nav.nav
+          ul.list.inline-list
+            li.item
+              a.link(href="./index.html") Volver a Inicio
+            li.item
+              a.link(href="#contact") Contacto
+      main.main.main-product
+        .product-container.section(data-aos="fade-up", data-aos-duration="1300")
+          
+          
+
+      footer.footer#contact
+        aside.media
+          .media-container-aux#mediaContainerAux
+            a.link(href="https://www.instagram.com/amg.cervezas.artesanales/")
+              img.image.social-media(src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-icono-de-instagram-logo-by-vexels.png", alt="Instagram")
+            a.link(href="https://www.facebook.com/AMG-Distribuidora-Artesanal-117593233419941/")
+              img.image.social-media(src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/768px-Facebook_f_logo_%282019%29.svg.png", alt="Facebook")
+          a.link#whatsappFooterLink(href="https://api.whatsapp.com/send?phone=542236233117")
+            img.image.social-media(src="https://i1.wp.com/tuplotter.com/wp-content/uploads/2019/07/get-logo-whatsapp-png-pictures-1.png?fit=1000%2C1024&ssl=1", alt="Whatsapp")
+
+        nav.footer-nav
+          ul.list
+            li.item
+              a.link(href="#info") Quiénes somos
+            li.markdown Marcas >
+              ul.list.inline-list.marcas
+                li.item
+                  a.link(href="./product.html?product=cheverry") Cheverry
+                li.item
+                  a.link(href="./product.html?product=gaukler") Gaukler
+                li.item
+                  a.link(href="./product.html?product=baum") Baum
+        
+        aside.copyright
+          p Webpage diseñada y realizada por
+          p AMG Distribuidora de Cerveza Artesanal
+          p.copyright-year#copyrightYear 
+
+    script(src="./js/product.js")
+    script(src="./js/index.js")

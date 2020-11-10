@@ -8,6 +8,7 @@
   align-items: center;
 
   padding-top: .5em;
+  padding-bottom: 1em;
 
   border-top: 1px solid #eee;
 
@@ -87,15 +88,12 @@
   }
 
   .copyright {
-    max-width: 10em;
-
-    line-height: 1.5em;
     text-align: right;
+    line-height: 1.1em;
     padding-right: 1em;
 
     .copyright-year {
-      line-height: 3em;
-      text-decoration: underline;
+      margin-top: 1em;
     }
   }
 }

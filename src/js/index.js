@@ -4,7 +4,7 @@ AOS.init()
 const copyrightYear = () => {
   const date = new Date();
   let copyrightYear = document.querySelector('#copyrightYear');
-  copyrightYear.innerHTML = 'Copyright&copy ' + date.getFullYear()
+  copyrightYear.innerHTML = 'Todos los derechos reservados&copy ' + date.getFullYear()
 }
 
 copyrightYear();

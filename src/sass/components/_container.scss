@@ -2,6 +2,7 @@
   position: relative;
   display: grid;
   width: 100%;
+  max-width: 100%;
 
   grid-template-rows: 3.5em 5fr minmax(7em, auto);
 

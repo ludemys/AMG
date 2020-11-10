@@ -1,5 +1,6 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat&family=Open+Sans&family=Roboto&family=Fredoka+One&display=swap');
+// @import url('../assets/fonts/rechteck.otf');
 
 * {
   color: #eee;
@@ -11,8 +12,7 @@ html {
 
 body {
   display: flex;
-  background-image: url('../assets/images/background.png');
-  background-repeat: no-repeat;
+  background-image: url('../assets/images/background/max_1200.png');
   background-size: cover;
 
   font-family: "Roboto", "Montserrat", "Open Sans", serif;
@@ -31,3 +31,5 @@ body {
 @import 'components/link';
 @import 'components/footer';
 @import 'components/trademarks';
+@import 'components/media_queries';
+@import 'components/product';
